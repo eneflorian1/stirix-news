@@ -1,0 +1,54 @@
+{
+    "name": "ai-news-site",
+    "version": "1.0.0",
+    "description": "AI generated news site",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build && npm run generate-sitemap",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "update-trends": "python src/scripts/fetch_trends.py",
+        "generate-sitemap": "node src/scripts/generateSitemap.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.7",
+        "cheerio": "^1.0.0-rc.12",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "google-trends-api": "^4.9.2",
+        "puppeteer": "^23.11.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-helmet": "^6.1.0",
+        "react-helmet-async": "^2.0.5",
+        "react-lazyload": "^3.2.1",
+        "react-router-dom": "^6.26.2",
+        "react-scripts": "^5.0.1",
+        "dotenv": "^16.0.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
