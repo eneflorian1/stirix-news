@@ -1,0 +1,14 @@
+/* NewsList.module.css */
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .newsList {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}

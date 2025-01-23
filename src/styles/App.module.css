@@ -1,0 +1,54 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.newsCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsCard h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.newsCard p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.newsCard small {
+  color: #888;
+  display: block;
+}
+
+.topic {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.timestamp {
+  font-style: italic;
+}
+
